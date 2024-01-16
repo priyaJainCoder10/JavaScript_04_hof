@@ -1,1 +1,1 @@
-console.log("Functions in JS");
+console.log("Functions in JS"); 
