@@ -1,0 +1,1 @@
+console.log("Functions in JS");
