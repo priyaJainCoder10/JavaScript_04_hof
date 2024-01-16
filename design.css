@@ -1,0 +1,186 @@
+/* root element */
+
+:root {
+    /* --black: #000; */
+    --black : #666666;
+    /* --grey : #3F51B5; */
+    --grey: #121212;
+    --light-grey: #232323;
+    --white: #fff;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito", sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    background-color: var(--black);
+    padding: 8px;
+}
+
+.sidebar {
+    flex: 0.25;
+    background-color: var(--black);
+    margin-right: 8px;
+    border-radius: 8px;
+}
+
+.main-content {
+    flex: 0.8;
+    background-color: var(--grey);
+    overflow-y: auto;
+    border-radius: 8px;
+}
+
+.player {
+    bottom: 0;
+    left: 0px;
+    background-color: var(--black);
+    position: fixed;
+    height: 80px;
+    width: 100%;
+}
+
+.top-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: var(--grey);
+    padding: 16px 24px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.link-flex {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    align-items: center;
+    opacity: 0.7;
+    font-weight: 600;
+    font-size: 12.8px;
+    cursor: pointer;
+}
+
+.link-flex:hover {
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.link-flex img {
+    height: 20px;
+    width: 20px;
+}
+
+.link-flex p {
+    font-size: 16px;
+    color: var(--white);
+}
+
+.library {
+    background-color: var(--grey);
+    border-radius: 8px;
+    padding: 8px 24px;
+    overflow-y: auto !important;
+    flex: 3;
+    height: 90vh;
+}
+
+.library h1 {
+    margin: 0px;
+}
+
+.flex-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 8px; */
+}
+
+.flex-top img {
+    height: 16px;
+    width: 16px;
+    opacity: 0.8;
+    margin-top: 8px;
+}
+
+.flex-top p {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.flex-top p:hover {
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.flex-top img:hover {
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.chip {
+    display: flex;
+    margin-top: 8px;
+    padding: 8px 15px;
+    background-color: var(--light-grey);
+    border-radius: 80px;
+    width: fit-content;
+    font-weight: normal;
+    color: var(--white);
+}
+
+/* Workout Playlist  */
+
+.album-flex {
+    margin-bottom: 16px !important;
+}
+
+.album-flex:hover {
+    background-color: var(--light grey);
+    transition: all 0.3s;
+}
+
+.albums {
+    margin-top: 16px;
+}
+
+.album-cover {
+    height: 48px !important;
+    width: 48px !important;
+    border-radius: 3px;
+}
+
+.col-flex p {
+    margin: 0;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.album-name {
+    color: var(--white);
+    margin-bottom: 6px !important;
+    font-size: 16px !important;
+}
+/*  Media Query */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
